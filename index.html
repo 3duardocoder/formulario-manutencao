@@ -1,31 +1,38 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-   <link rel="stylesheet" href="./geral.css">
-    <link rel="stylesheet" href="./portrait.css">
-    <link rel="stylesheet" href="./landscape.css" >
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" importance="high" />
+
+    <link rel="stylesheet" href="./portrait.css" importance="high">
+    <link rel="stylesheet" href="./geral.css" importance="high">
+    <link rel="stylesheet" href="./landscape.css" importance="medium">
+    <link rel="stylesheet" href="./large-landscape.css" importance="medium">
 
     <title>Document</title>
 </head>
+
 <body>
-<main class="contato">
-    <form action="" method="post">
-        <label for="nome" class="desc">Nome:</label>
-        <input type="text" name="nome" id="nome" class="nome">
+    <main class="contato">
+        <form action="" method="post">
+            <label for="nome" class="desc">Nome:</label>
+            <input type="text" name="nome" id="nome" class="nome">
 
-        <label for="telefone" class="desc">Telefone:</label>
-        <input type="tel" name="telefone" id="telefone">
+            <label for="telefone" class="desc">Telefone:</label>
+            <input type="tel" name="telefone" id="telefone">
 
-        <label for="chamado" class="desc">Motivo do chamado:</label>
-        <textarea name="chamado" id="chamado"></textarea>
+            <label for="chamado" class="desc">Motivo do chamado:</label>
+            <textarea name="chamado" id="chamado"></textarea>
 
-        <button type="button" name="enviar" id="enviar" class="enviar">Enviar</button>
+            <button type="button" name="enviar" id="enviar" class="enviar">Enviar</button>
 
-        <p class="status"></p>
-    </form>
-</main>
+            <p class="status"></p>
+        </form>
+    </main>
 </body>
+
 </html>

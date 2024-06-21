@@ -1,0 +1,80 @@
+@charset "UTF-8";
+/*
+pequenas telas: ate 600px;
+celular: de 600px ate768px;
+tablet: 768px ate 992px;
+desktop: de 992px ate 1200px;
+grandes telas: telas acima de 1200px;
+*/
+
+html,body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+}
+header{
+    background-color: black;
+    position: fixed;
+    width: 100vw;
+    top: 0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-content: space-evenly;
+}
+
+.logo{
+    width: 100px;
+}
+
+.menu{
+    display: flex;
+    position: absolute;
+overflow-y: hidden;
+
+    padding: 10px;
+    margin: 0px;
+    top: 0;
+    right: 0;
+    width: 50vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+
+    background-color: lime;
+}
+
+.link{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.menu-hamburger{
+    display: flex;
+    position: absolute;
+    right: 20px;
+    align-self: center;
+    justify-content: end;
+}
+.menu-hamburger:hover{
+    fill: gray;
+}
+
+.close-icon{
+    display: flex;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    align-self: center;
+    justify-content: end;
+}
+
+.close-icon:hover{
+    fill: gray;
+}

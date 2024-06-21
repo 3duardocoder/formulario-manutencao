@@ -1,6 +1,10 @@
 @charset "UTF-8";
 
 @media screen and (orientation:portrait){
+    main{
+        width: 100vw;
+        height: 100vh;
+    }
 form{
     width: 300px;
     height: 400px;

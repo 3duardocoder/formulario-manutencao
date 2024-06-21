@@ -1,5 +1,31 @@
 @charset "UTF-8";
 
 @media screen and (orientation: landscape){
+    main{
+        width: 100vw;
+        height: 100vh;
+    }
+form{
+    width: 500px;
+    height: 500px;
 
+}    input{
+    width: 350px;
+    height: 30px;
+    padding: 5px;
+    }
+    textarea{
+        width: 300px;
+        height: 80px;
+        padding: 10px;
+        max-width: 400px;
+        max-height: 120px;
+    }
+    .enviar{
+        width: 130px;
+        height: 50px;
+    }
+    .desc{
+        font-size: 30px;
+    }
 }
