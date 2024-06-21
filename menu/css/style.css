@@ -7,15 +7,19 @@ desktop: de 992px ate 1200px;
 grandes telas: telas acima de 1200px;
 */
 
-html,body{
+html,
+body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-body{
+
+body {
     height: 100vh;
+    background-color: gray;
 }
-header{
+
+header {
     background-color: black;
     position: fixed;
     width: 100vw;
@@ -28,53 +32,79 @@ header{
     justify-content: space-evenly;
 }
 
-.logo{
+.logo {
     width: 100px;
 }
 
-.menu{
-    display: flex;
+.menu {
+    display: none;
     position: absolute;
-overflow-y: hidden;
-
-    padding: 10px;
+    padding: 0;
     margin: 0px;
     top: 0;
     right: 0;
     width: 50vw;
     height: 100vh;
-    justify-content: center;
     align-items: center;
-
-    background-color: lime;
+    justify-content: start;
+    background-color: rgb(54, 51, 51);
 }
 
-.link{
+.menu-hamburger {
+    display: flex;
+    position: absolute;
+    right: 20px;
+    align-self: center;
+    justify-content: end;
+}
+
+.menu-hamburger:hover {
+    fill: gray;
+}
+
+.close-icon {
+    display: flex;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    align-self: center;
+    justify-content: end;
+}
+
+.close-icon:hover {
+    fill: gray;
+}
+
+.lista-atalhos {
+    width: 50vw;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    
+    
+    flex-direction: column;
+    text-align: center;
+    
+
+}
+
+.lista-atalhos>a {
+    margin: 0;
+    text-decoration: none;
+margin-bottom: 5px;
+}
+
+li {
+    border: 2px solid black;
+    height: 40px;
+    width: 50vw;
+    list-style: none;
+    background-color: rgb(155, 114, 114);
     color: white;
     text-decoration: none;
     font-size: 20px;
 }
 
-.menu-hamburger{
-    display: flex;
-    position: absolute;
-    right: 20px;
-    align-self: center;
-    justify-content: end;
-}
-.menu-hamburger:hover{
-    fill: gray;
-}
-
-.close-icon{
-    display: flex;
-    position: absolute;
-    top: 10px;
-    right: 20px;
-    align-self: center;
-    justify-content: end;
-}
-
-.close-icon:hover{
-    fill: gray;
+.lista-atalhos>a>li:hover{
+    background-color: lightgray;
 }

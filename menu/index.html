@@ -22,17 +22,18 @@
     </header>
     <menu class="menu" draggable="true">
         <svg class="close-icon" xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960" width="48px"
-            fill="#ffffff">
+            fill="#ffffff"
+            onclick="ocultar()">
             <path
                 d="m249-207-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z" />
         </svg>
 
-        <ul>
-            <a href="#" class="link">e</a>
-            <a href="#" class="link">d</a>
-            <a href="#" class="link">d</a>
-            <a href="#" class="link">g</a>
-            <a href="#" class="link">c</a>
+        <ul class="lista-atalhos">
+            <a href="#" class="link"><li>a</li></a>
+            <a href="#" class="link"><li>a</li></a>
+            <a href="#" class="link"><li>a</li></a>
+            <a href="#" class="link"><li>a</li></a>
+            <a href="#b" class="link"><li>a</li></a>
 
         </ul>
     </menu>
@@ -43,6 +44,12 @@
             let menu = document.getElementsByClassName("menu")[0];
             menu_hamb.style.display = 'none'
             menu.style.display = 'flex';
+        }
+        function ocultar(){
+            let menu_hamb = document.getElementsByClassName("menu-hamburger")[0];
+            let menu = document.getElementsByClassName("menu")[0];
+            menu_hamb.style.display = 'flex'
+            menu.style.display = 'none';
         }
 
 
