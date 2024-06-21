@@ -118,6 +118,7 @@ li {
     width: 100vw;
     height: 100vh;
 
+    overflow: hidden;
     background-image: url(../assets/main/code-mobile.jpg);
     background-size: cover;
     background-position: center left;
@@ -133,7 +134,7 @@ li {
 
 .hero>h1 {
     color: gold;
-    font-size: 60px;
+    font-size: 40px;
     text-shadow: 1px 1px 1px lightslategray;
     width: 400px;
 }
